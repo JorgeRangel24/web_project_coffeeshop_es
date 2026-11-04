@@ -14,7 +14,7 @@ body {
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
-  font-family: "Inter", "Arial", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -47,9 +47,8 @@ body {
 
 .span-accent {
   display: block;
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", Georgia, serif;
   font-style: italic;
-  font-weight: normal;
   font-size: 58px;
   line-height: 72px;
   color: #ff976b;
@@ -73,8 +72,6 @@ body {
 
 .header-title {
   max-width: 709px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 58px;
   line-height: 72px;
@@ -84,9 +81,6 @@ body {
 
 .header-description {
   max-width: 683px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 30px;
   margin: 0;
@@ -98,8 +92,10 @@ body {
   align-items: flex-end;
   position: absolute;
   bottom: 40px;
-  left: 80px;
-  right: 80px;
+  left: 0;
+  width: 100%;
+  padding: 0 80px;
+  box-sizing: border-box;
 }
 
 .info-text {
