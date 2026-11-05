@@ -58,8 +58,125 @@
     </header>
 
     <main class="content">
-      <section class="reservation" id="reservation"></section>
+      <section class="reservation" id="reservation">
+        <h2 class="reservation__title">Reservar una mesa</h2>
+
+        <form class="reservation__form">
+          <fieldset class="reservation__fieldset">
+            <div class="reservation__field">
+              <label class="reservation__label" for="name">Nombre *</label>
+              <input
+                class="reservation__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nombre"
+                required
+              />
+            </div>
+
+            <div class="reservation__field">
+              <label class="reservation__label" for="guests">
+                Número de comensales *
+              </label>
+              <input
+                class="reservation__input"
+                type="number"
+                id="guests"
+                name="guests"
+                min="1"
+                max="8"
+                placeholder="1-8"
+                required
+              />
+            </div>
+
+            <div class="reservation__field">
+              <label class="reservation__label" for="datetime">
+                Fecha y hora *
+              </label>
+              <input
+                class="reservation__input"
+                type="datetime-local"
+                id="datetime"
+                name="datetime"
+                required
+              />
+            </div>
+
+            <div class="reservation__field">
+              <label class="reservation__label" for="email">
+                Tu correo electrónico *
+              </label>
+              <input
+                class="reservation__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email@email.com"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <button class="reservation__button" type="submit">
+            Reservar una mesa
+          </button>
+
+          <label
+            class="reservation__label reservation__checkbox"
+            for="terminos"
+          >
+            <input
+              class="reservation__checkbox-input"
+              type="checkbox"
+              id="terminos"
+              name="terminos"
+              required
+            />
+            <span class="reservation__checkbox-label">
+              Acepto los términos de uso
+            </span>
+          </label>
+        </form>
+      </section>
     </main>
-    <footer class="footer" id="contactos"></footer>
+
+    <footer class="footer" id="contactos">
+      <div class="footer__circle"></div>
+      <div class="footer__content">
+        <img
+          class="footer__logo"
+          src="./images/logo_coffeeshop_light.svg"
+          alt="Logotipo Triple Espresso"
+        />
+        <div class="footer__social">
+          <h3 class="footer__social-title">Redes sociales</h3>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img
+                  class="footer__social-logo"
+                  src="./images/facebook_white.svg"
+                  alt=""
+                />
+                Facebook
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img
+                  class="footer__social-logo"
+                  src="./images/instagram_white.svg"
+                  alt=""
+                />
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copyright">© 2026 Jorge Rangel</p>
+    </footer>
   </body>
 </html>
